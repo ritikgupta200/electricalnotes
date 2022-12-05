@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="CyberMajeed" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./assets/ElectroNote.png" />
+  </head>
+  <body>
+    <!---->
+    <div class="imgWrapper">
+      <span class="closeImgWrapper" title="Close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="50px"
+          viewBox="0 0 24 24"
+          width="50px"
+          fill="#FFF"
+        >
+          <path d="M0 0h24v24H0V0z" fill="none" opacity=".87" />
+          <path
+            d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4.3 14.3c-.39.39-1.02.39-1.41 0L12 13.41 9.11 16.3c-.39.39-1.02.39-1.41 0-.39-.39-.39-1.02 0-1.41L10.59 12 7.7 9.11c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L12 10.59l2.89-2.89c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41L13.41 12l2.89 2.89c.38.38.38 1.02 0 1.41z"
+          />
+        </svg>
+      </span>
+      <img class="imgViewer" src="" />
+    </div>
+    <div class="container">
+      <div class="topNavParent">
+        <div class="searchForNotes" title="Search Note">
+          <span class="filter"></span>
+          <input type="text" placeholder="Search Notes" />
+        </div>
+        <div class="hideSidebar" title="Hide Sidebar"></div>
+      </div>
+      <div class="notesList"></div>
+      <div class="addNoteParent">
+        <button class="addNote" title="Add Note"></button>
+      </div>
+    </div>
+    <!--wrapper-->
+    <div class="wrapper">
+      <div class="topParentForTitleDelInEditView">
+        <input
+          type="text"
+          class="noteTitleInEditView"
+          placeholder="Title"
+          maxlength="100"
+        />
+        <button class="noteColor" title="Change Theme"></button>
+        <div class="colorPalette">
+          <button
+            class="colorSet"
+            style="--background: #ffffff; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: #1d1d1d; --color: #fff"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: #fdfd8d; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: aquamarine; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: #9cd7ff; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: #fc79d5; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: #60ff60; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: #ffe5b4; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: cyan; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: #ffaf6e; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: #ff8080; --color: #000"
+          ></button>
+          <button
+            class="colorSet"
+            style="--background: #dc83ff; --color: #000"
+          ></button>
+        </div>
+        <button class="deleteNote" title="Delete Note"></button>
+      </div>
+      <div class="noteContentInEditView" placeholder="Type Here"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
